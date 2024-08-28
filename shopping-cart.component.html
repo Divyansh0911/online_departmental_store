@@ -1,0 +1,7 @@
+<h2>Shopping Cart</h2>
+<ul>
+  <li *ngFor="let item of cartItems">
+    {{ item.quantity }} x {{ item.name }} - {{ item.price | currency }}
+  </li>
+</ul>
+<p>Total: {{ getTotal() | currency }}</p>
